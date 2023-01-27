@@ -15,37 +15,28 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  TextEditingController userController = TextEditingController();
-  TextEditingController passController = TextEditingController();
+  String Usuario = '';
+  String pass = '';
 
-  Future login() async {
-    try {
-      var url = Uri.parse("http://192.168.1.254/sigue/login.php");
-      var response = await http.post(url, body: {
-        "user": userController.text,
-        "pass": passController.text,
-      }).timeout(const Duration(seconds: 90));
+  String usuVal = 'admin';
+  String passVal = 'admin';
 
-      var data = json.encode(response.body);
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
-      if (data == "Success") {
+  void login() {
+    FormState? formState = formKey.currentState;
+
+    if (formState!.validate()) {
+      formState.save();
+
+      if (usuVal == Usuario && passVal == pass) {
         Navigator.pushReplacementNamed(context, InicioScreen.routerName);
-      } else if (data == "Error") {
-        Scaffold.of(context).showSnackBar(
-          SnackBar(
-              backgroundColor: Colors.red,
-              content: Row(
-                children: const [
-                  Icon(Icons.error_outline),
-                  Text("Usuario y/o contraseña incorrectas"),
-                ],
-              )),
-        );
+      } else {
+        print('Credenciales incorrectas');
       }
-    } on TimeoutException catch (e) {
-      print('Tarda mucho la conexion');
-    } on Error catch (e) {
-      print('Http error');
+
+      print('Usuario: $Usuario');
+      print('Contrasenia $pass');
     }
   }
 
@@ -56,6 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
           child: Form(
+            key: formKey,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -78,24 +70,30 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(
                   height: 50,
                 ),
-                const Text("Ingresa tus credenciales", style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal)),
+                const Text("Ingresa tus credenciales",
+                    style:
+                        TextStyle(fontSize: 15, fontWeight: FontWeight.normal)),
                 const SizedBox(
                   height: 15,
                 ),
                 TextFormField(
-                  controller: userController,
                   decoration: TextInputDecoration.copyWith(
                       labelText: "Usuario",
                       prefixIcon: const Icon(
                         Icons.person,
                         color: Color(0xFF386641),
                       )),
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return "Campo requerido";
+                    }
+                  },
+                  onSaved: (value) => Usuario = value!,
                 ),
                 const SizedBox(
                   height: 20,
                 ),
                 TextFormField(
-                  controller: passController,
                   obscureText: true,
                   decoration: TextInputDecoration.copyWith(
                       labelText: "Contraseña",
@@ -103,6 +101,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         Icons.lock,
                         color: Color(0xFF386641),
                       )),
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return "Campo requerido";
+                    }
+                  },
+                  onSaved: (value) => pass = value!,
                 ),
                 const SizedBox(
                   height: 20,
