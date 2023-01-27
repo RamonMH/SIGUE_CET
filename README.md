@@ -1,16 +1,6 @@
-# sigue_cet
+# SIGUE CET
 
-A new Flutter project.
+SIGUE CET es un proyecto realizado para el Centro de Estudios Tecnológicos No. 1 "Walter Cross Buchanan", que tiene la finalidad de tener una herramiente digital para la comunidad estudiantil del centro de estudios.
 
-## Getting Started
+![](https://res.cloudinary.com/ramonmh/image/upload/v1674783871/ICONO-APP_vfuzsm.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
