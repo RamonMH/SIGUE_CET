@@ -8,14 +8,35 @@ La finalidad de este proyecto es otorgar a la institucion educativa la interfaz 
 
 ### Interfaz gráfica desarrollada
 A continuacion se muestran capturas de pantalla de la ejecucion de la app.
+
 Cabe mencionar que este proyecto incluye la navegacion completa entre ventanas.
 
-![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674873807/Screenshot_20230127-162644_mbq0hw.jpg) Login principal
-![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164410_uczowv.jpg) Pantalla inicial de la app
-![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164426_sg1g5w.jpg) Credencial digital del alumno
-![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164457_shmktc.jpg) Menu desplegable de navegacion
-![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164441_ckeyb5.jpg) Perfil del alumno
-![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164448_zdnl8q.jpg) Campos de actualizacion/modificacion de datos personales
-![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164434_l62tjx.jpg) Ventana del calendario escolar (se le puede hacer zoom)
+![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674873807/Screenshot_20230127-162644_mbq0hw.jpg) 
+
+Login principal
+
+![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164410_uczowv.jpg) 
+
+Pantalla inicial de la app
+
+![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164426_sg1g5w.jpg) 
+
+Credencial digital del alumno
+
+![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164457_shmktc.jpg) 
+
+Menu desplegable de navegacion
+
+![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164441_ckeyb5.jpg) 
+
+Perfil del alumno
+
+![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164448_zdnl8q.jpg) 
+
+Campos de actualizacion/modificacion de datos personales
+
+![](https://res.cloudinary.com/ramonmh/image/upload/c_scale,w_185/v1674874116/Screenshot_20230127-164434_l62tjx.jpg) 
+
+Ventana del calendario escolar (se le puede hacer zoom)
 
 
